@@ -42,24 +42,27 @@ a{
             left: 0;
             background: radial-gradient(white, transparent 50%, white),
                 repeating-conic-gradient(from 0deg at 50% 50%,
-                    #eec042 70deg,
-                    #cedb95 20deg,
+                    #f8e8bc 70deg,
+                    #f4f6ed 20deg,
                     #e8f6b3 60deg);
             filter: blur(10px);
         
             background-blend-mode: screen;
 
 }
+
+
+
 .container {
     height: 100vh;
     position: relative;
-    overflow: hidden;
 }
 nav{
     display: flex;
     justify-content: space-between;
     margin-left: 50px;
     margin-right: 50px;
+    align-items: center;
 }
 
 .flexy{
@@ -75,9 +78,10 @@ justify-content: space-between;
 .nav-link-holder{
     display: flex;
     justify-content: space-between;
-    width: 300px;
+    width: 750px;
     align-items: center;
     font-size: 18px;
+
     
 }
 
@@ -100,7 +104,8 @@ a:hover{
     text-align: center;
     border-radius: 10px;
     cursor: pointer;
-                                                                
+                            
+    margin-right: 10px;
     
    
 }
@@ -190,6 +195,126 @@ height: 100%;
     z-index: 999999;
     
         background-blend-mode: screen;
+}
+
+
+.subtext{
+    font-size: 18px;
+    letter-spacing: 2px;
+    line-height: 30px;
+}
+
+
+.custom-second-grid {
+    grid-column-gap: 100px;
+}
+
+
+.custom-second {
+    width: auto;
+    height: auto;
+}
+
+
+.custom-width{
+   width: 500px;
+}
+
+#ham{
+    display: none;
+}
+#mob{
+    display: flex;
+}
+#cross {
+    display: none;
+}
+
+@media screen and (max-width:650px) {
+
+#mob{
+    position: absolute;
+    right: 0;
+display: flex;
+    justify-content: space-between;
+    width: auto;
+    flex-direction: column;
+    top: 0px;
+    display: none;
+    width: 50vw;
+    align-items: center;
+}
+nav{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+#mob{
+    height: 100vh;
+    background-color: white;
+
+}
+
+
+.nav-link-holder {
+display: flex;
+    justify-content: space-evenly;
+    height: 291px;
+    align-items: center;
+    font-size: 18px;
+    flex-direction: column;
+    margin-bottom: 20px;
+    align-items: center;
+    width: auto;
+
+}
+
+    #ham{
+        display: block;
+        cursor: pointer;
+    }
+
+
+    #cross{
+        position: absolute;
+        right: 0px;
+        cursor: pointer;
+    }
+
+.grid{
+    display: block;
+}
+
+
+
+element {}
+
+.main>h1 {
+
+    font-weight: 300;
+    letter-spacing: 2px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 40px;
+
+
+}
+    .img-holder{
+        display: none;
+        
+    }
+
+    #cross{
+        display: block;
+    }
+
+
+        .grid-3-col {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            grid-column-gap: 0px;
+            grid-row-gap: 50px;
+        }
 }
 
 
