@@ -43,6 +43,10 @@ a{
 }
 
 
+.border-mobile{
+    border-bottom: 0.2px solid black;
+}
+
 
 .transform{
     transform: translateY(0%);
@@ -53,6 +57,7 @@ nav {
         align-items: center;
     margin-left: 30px;
     margin-right: 30px;
+
 }
 
 #mob {
